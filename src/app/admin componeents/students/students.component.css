@@ -175,7 +175,7 @@ margin-left: 20px;
 }
 .fc-day-header {
   display: inline-flex;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   align-items: center;
 
   padding: 10px;
