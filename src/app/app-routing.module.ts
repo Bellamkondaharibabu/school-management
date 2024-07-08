@@ -11,6 +11,9 @@ import { TeachersComponent } from './admin componeents/teachers/teachers.compone
 // import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+
+
+  { path: '', pathMatch: 'full', redirectTo: 'admin' },
   {
     path:'header',component:HeaderComponent
   },
