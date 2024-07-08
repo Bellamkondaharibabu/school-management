@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  /* overflow: hidden; */
+}
+.layout {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100vw;
+  /* height: calc(100vh - 10px); */
+  overflow: hidden;
+}
+
+.main-container {
+  width: calc(100vw - 14vw);
+  height: calc(100vh - 10vh);
+  overflow-x: auto;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #f0f1f3;
+
+}
+
+.visible-body {
+  flex: auto;
+  max-width: calc(100vw);
+  transition: all 0.5s ease;
+  overflow: hidden;
+
+  height: calc(100vh - 0px);
+}
+
+.visible-body.sidebar-mini {
+  max-width: 100vw;
+  transition: all 0.5s ease;
+  overflow-y: auto;
+  color: aqua;
+}
+
+.header-body {
+  background-color: #fff;
+  color: #212529;
+  width: calc(100vw - 14vw);
+  position: sticky;
+}

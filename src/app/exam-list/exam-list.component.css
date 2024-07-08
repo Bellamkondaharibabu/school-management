@@ -1,0 +1,8 @@
+.col-auto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-right{
+  text-align: right;
+}

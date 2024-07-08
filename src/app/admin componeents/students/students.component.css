@@ -1,0 +1,314 @@
+.cal-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.media {
+  display: flex;
+  font-size: small;
+  justify-content: space-evenly;
+}
+.media-body {
+  margin-left: 35px;
+}
+/* .text-dark-medium{
+padding: 8px;
+margin-left: 20px;
+} */
+.tr-media {
+  display: flex;
+  justify-content: space-between;
+}
+.font-medium {
+  border: none;
+}
+
+/* hdfgvdgf */
+
+.dash-widget {
+  margin-bottom: 20px;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.float-left1 {
+  color: red;
+  border-radius: 50px;
+  background-color: aqua;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin-top: 7px;
+}
+.float-left2 {
+  color: rgb(13, 0, 255);
+  border-radius: 50px;
+  background-color: rgb(133, 147, 206);
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin-top: 7px;
+}
+.float-left3 {
+  color: rgb(43, 215, 27);
+  border-radius: 50px;
+  background-color: rgb(171, 217, 156);
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.dash-widget-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.dash-widget5 {
+  background-color: #fff;
+  /* border: 1px solid #e3e6ef; */
+}
+
+.dash-widget5 span {
+  color: #ffff;
+}
+
+.numbers {
+  font-size: 20px;
+}
+
+.widget {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  row-gap: 10px;
+}
+
+.numbers {
+  font-size: 24px;
+  margin: 0;
+}
+.s-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.st-data {
+  border: none;
+}
+.card {
+  border: none;
+  padding-top: 30px;
+  height: 100%;
+}
+
+.footer-page {
+  display: flex;
+  align-items: end;
+  justify-content: right;
+}
+
+
+
+
+/* calender start..................... */
+
+.cal-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cal-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fc-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.fc-button {
+  background-color: #127ce6;
+  border-radius: 40px;
+}
+
+.fc-center {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.fc-button {
+  padding: 6px 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.fc-button-group {
+  border-radius: 20px;
+  background-color: #e9e9e9;
+}
+
+.fc-button:hover {
+  background-color: #e9e9e9;
+}
+
+.fc-state-active {
+  /* Styles for the active button */
+  background-color: #007bff;
+  color: #fff;
+}
+.fc-head {
+  display: flex;
+  text-align: center;
+  background-color: #777;
+  /* margin-left: 20px; */
+}
+.fc-day-header {
+  display: inline-flex;
+  margin-left: 10px;
+  align-items: center;
+
+  padding: 10px;
+}
+
+
+
+
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  /* margin-left: 20px; */
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 10.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 720px) {
+  .weekdays li,
+  .days li {
+    width: 13.1%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li,
+  .days li {
+    width: 12.5%;
+  }
+  .days li .active {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li,
+  .days li {
+    width: 12.2%;
+  }
+}
+
+.traffic-bar{
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.notice-box-wrap{
+  overflow-y: scroll;
+  max-height: 280px;
+  padding-right: 20px;
+}
+
+.post-data{
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+.post-titel{
+font-weight: 700;
+font-size: small;
+margin-bottom: 8px;
+}
+.notice-list {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+}
+
+
+
+
+.cal-m{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}

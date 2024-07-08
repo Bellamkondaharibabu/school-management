@@ -1,0 +1,317 @@
+<!-- <div class="h-screen flex-grow-1 overflow-y-lg-auto"> -->
+<section>
+  <div class="">
+    <!-- Header start -->
+    <h3 class="ms-3 p-2">Admin Dashbord</h3>
+
+    <p class="mt-2 ms-3">
+      Home <i class="bi bi-chevron-right"></i>
+      <span style="color: rgb(231, 154, 60)">admin</span>
+    </p>
+  </div>
+  <!-- Header end -->
+  <!-- Main -->
+
+  <div class="section row row-content">
+    <!-- <div class="row  g-2"> -->
+    <div class="col-3">
+      <div class="dash-widget dash-widget5 d-flex">
+        <p class="float-left" style="font-size: 50px">
+          <i class="fa-solid fa-children"></i>
+        </p>
+        <div class="dash-widget-info text-right">
+          <p class="mb-3">Students</p>
+          <h3 class="numbers">5690</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="dash-widget dash-widget5 d-flex">
+        <p class="float-left" style="font-size: 50px">
+          <i class="fa-solid fa-users"></i>
+        </p>
+        <div class="dash-widget-info text-right">
+          <p class="mb-3">Teachers</p>
+          <h3 class="numbers">5690</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="dash-widget dash-widget5 d-flex">
+        <p class="float-left" style="font-size: 50px">
+          <i class="fa-solid fa-user-group"></i>
+        </p>
+        <div class="dash-widget-info text-right">
+          <p class="mb-3">Parents</p>
+          <h3 class="numbers">5690</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="dash-widget dash-widget5 d-flex">
+        <p class="float-left" style="font-size: 50px">
+          <i class="fa-solid fa-laptop-code"></i>
+        </p>
+        <div class="dash-widget-info text-right">
+          <p class="mb-3">Earnings</p>
+          <h3 class="numbers">$193000</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- chat 1 start -->
+  <div class="section">
+    <div class="widget dash-widget col-6">
+      <!-- <h3 style="color: red">hi</h3> -->
+      <div style="display: block">
+        <canvas baseChart width="400" height="400" [type]="'line'" [data]="lineChartData" [options]="lineChartOptions"
+          [legend]="lineChartLegend">
+        </canvas>
+      </div>
+    </div>
+    <!-- end chart  -->
+    <div class="widget dash-widget col-3"></div>
+    <div class="widget dash-widget col-3"></div>
+  </div>
+
+  <div class="section">
+
+    <!-- col-2  start-->
+    <div class="widget col-4">
+      <div class="calender-heding">
+        <div class="cal-body mb-3">
+          <h6>Event Calender</h6>
+          <span><a href=""> <i class="bi bi-three-dots"></i></a>
+          </span>
+        </div>
+      </div>
+      <div class="cal-month">
+        <div class="cal-date">
+          <h5>July 2024</h5>
+          <div class="">
+            <span><i class="fa-solid fa-angle-left"></i><i class="fa-solid fa-angle-right"></i></span>
+          </div>
+        </div>
+
+        <div class="fc-center">
+          <div class="fc-button-group">
+            <button type="button" class="fc-basicDay-button fc-button " fdprocessedid="09e7w">day</button>
+            <button type="button" class="fc-basicWeek-button fc-button " fdprocessedid="28mbju">week</button>
+            <button type="button" class="fc-month-button fc-button fc-state-active" fdprocessedid="6mxbr">month</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="fc-view-container">
+        <div class="fc-month-view">
+
+          <table class="fc-row">
+            <thead class="fc-head ">
+              <tr class="container">
+                <th class="fc-day-header "><span>sun</span></th>
+                <th class="fc-day-header"><span>mon</span></th>
+                <th class="fc-day-header"><span>tus</span></th>
+                <th class="fc-day-header"><span>wen</span></th>
+                <th class="fc-day-header"><span>thu</span></th>
+                <th class="fc-day-header"><span>fry</span></th>
+                <th class="fc-day-header"><span>sat</span></th>
+              </tr>
+            </thead>
+
+            <ul class="days">
+              <li>31</li>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li><span class="active">9</span></li>
+              <li>10</li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>39</li>
+              <li>30</li>
+              <li>31</li>
+            </ul>
+
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+    <!-- col-3 start -->
+    <div class="widget col-4">
+      <div class="calender-heding">
+        <div class="cal-body mb-3">
+          <h6>Website Trafic</h6>
+          <span><a href=""> <i class="bi bi-three-dots"></i></a>
+          </span>
+        </div>
+        <p class="opacity-50">Unique Visitors</p>
+        <div style="font-weight: bold;"> 2,590</div>
+
+        <div class="progress-stacked mt-2">
+          <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0"
+            aria-valuemax="100" style="width: 50%">
+            <div class="progress-bar bg-success"></div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="30" aria-valuemin="0"
+            aria-valuemax="100" style="width: 40%">
+            <div class="progress-bar bg-primary"></div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100" style="width: 10%">
+            <div class="progress-bar bg-warning"></div>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20" aria-valuemin="0"
+            aria-valuemax="100" style="width: 10%">
+            <div class="progress-bar bg-danger"></div>
+          </div>
+        </div>
+
+        <table class="table mt-4">
+
+          <tbody>
+            <tr id="tr">
+              <th scope="row"> <input class="form-check-input bg-success" type="radio" name="flexRadioDefault"
+                  id="flexRadioDefault1"></th>
+              <td>Direct</td>
+              <td>12,890</td>
+              <td>50%</td>
+            </tr>
+            <tr id="tr">
+              <th scope="row"> <input class="form-check-input bg-primary" type="radio" name="flexRadioDefault"
+                  id="flexRadioDefault1"></th>
+              <td>search</td>
+              <td>7,245</td>
+              <td>27%</td>
+            </tr>
+            <tr id="tr">
+              <th scope="row"> <input class="form-check-input bg-warning" type="radio" name="flexRadioDefault"
+                  id="flexRadioDefault1"></th>
+              <td>Refeerals</td>
+              <td> 4,256</td>
+              <td>8%</td>
+            </tr>
+            <tr id="tr">
+              <th scope="row"> <input class="form-check-input bg-danger" type="radio" name="flexRadioDefault"
+                  id="flexRadioDefault1"></th>
+              <td>Solid</td>
+              <td>27%</td>
+              <td>7%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- col-4 start -->
+
+    <div class="widget col-4">
+      <div class="calender-heding">
+        <div class="cal-body mb-3">
+          <h6>Notice Bord</h6>
+          <span><a href=""> <i class="bi bi-three-dots"></i></a>
+          </span>
+        </div>
+        <div class="notice-box-wrap ">
+          <!-- <div class="overflow-y-scroll"> -->
+          <div class="notice-list">
+            <span class="post-data bg-success">06 July, 2024 </span>
+            <h6 class="post-titel">Great School manag mene esom text of the printing.</h6>
+            <div class="meta">Jennyfar Lopez /<span> 5 min ago</span></div>
+          </div>
+          <div class="notice-list">
+            <span class="post-data bg-danger">06 July, 2024 </span>
+            <h6 class="post-titel">Great School manag printing.</h6>
+            <div class="meta">Jennyfar Lopez /<span> 5 min ago</span></div>
+          </div>
+          <div class="notice-list">
+            <span class="post-data bg-warning">06 July, 2024 </span>
+            <h6 class="post-titel">Great School manag meneesom.</h6>
+            <div class="meta">Jennyfar Lopez /<span> 5 min ago</span></div>
+          </div>
+          <div class="notice-list">
+            <span class="post-data bg-success">06 July, 2024 </span>
+            <h6 class="post-titel">Great School manag mene esom text of the printing.</h6>
+            <div class="meta">Jennyfar Lopez /<span> 5 min ago</span></div>
+          </div>
+          <div class="notice-list">
+            <span class="post-data bg-danger">06 July, 2024 </span>
+            <h6 class="post-titel">Great School manag mene esom text of the printing.</h6>
+            <div class="meta">Jennyfar Lopez /<span> 5 min ago</span></div>
+          </div>
+          <div class="notice-list">
+            <span class="post-data bg-warning">06 July, 2024 </span>
+            <h6 class="post-titel">Great School manag mene esom text of the printing.</h6>
+            <div class="meta">Jennyfar Lopez /<span> 5 min ago</span></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- end -->
+
+  <!-- footer started -->
+  <div class="section row">
+    <div class="col-3">
+      <div class="dash-card dash-widget5 card-color1">
+        <span class="float-center ms-5">
+          <i class="bi bi-facebook"></i>
+          <span class="mb-3"> Like us on facebook</span></span>
+
+        <p class="numbers">2250</p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="dash-card dash-widget5 card-color2">
+        <span class="float-center ms-5">
+          <i class="bi bi-twitter"></i>
+          <span class="mb-3"> Follow us on twitter</span></span>
+
+        <p class="numbers">2250</p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="dash-card dash-widget5 card-color3">
+        <span class="float-center ms-5">
+          <i class="bi bi-google"></i>+
+          <span class="mb-3"> Follow us on googleplus</span></span>
+
+        <p class="numbers">2250</p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="dash-card dash-widget5 card-color4">
+        <span class="float-center ms-5">
+          <i class="bi bi-linkedin"></i>
+          <span class="mb-3"> Follow us on linked</span></span>
+
+        <p class="numbers">2250</p>
+      </div>
+    </div>
+  </div>
+
+
+</section>
