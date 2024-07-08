@@ -145,7 +145,7 @@ margin-left: 20px;
 }
 
 .fc-button {
-  padding: 6px 20px;
+  padding: 2px 20px;
   border: 1px solid #ccc;
   background-color: #f9f9f9;
   color: #333;
@@ -167,19 +167,7 @@ margin-left: 20px;
   background-color: #007bff;
   color: #fff;
 }
-.fc-head {
-  display: flex;
-  text-align: center;
-  background-color: #777;
-  /* margin-left: 20px; */
-}
-.fc-day-header {
-  display: inline-flex;
-  /* margin-left: 10px; */
-  align-items: center;
 
-  padding: 10px;
-}
 
 
 
@@ -198,7 +186,7 @@ body {
   text-align: center;
 }
 
-.month ul {
+/* .month ul {
   margin: 0;
   padding: 0;
 }
@@ -218,7 +206,7 @@ body {
 .month .next {
   float: right;
   padding-top: 10px;
-}
+} */
 
 .weekdays {
   margin: 0;
@@ -234,7 +222,7 @@ body {
 }
 
 .days {
-  padding: 10px 0;
+  padding: 7px 0;
   background: #eee;
   /* margin-left: 20px; */
 }
