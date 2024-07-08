@@ -7,6 +7,42 @@
 }
 
 /* styles.css */
+.float-left1 {
+  color: rgb(113, 165, 94);
+  border-radius: 50px;
+  background-color: rgb(13, 255, 0);
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin-top: 7px;
+}
+.float-left2 {
+  color: rgb(87, 89, 199);
+  border-radius: 50px;
+  background-color: rgb(39, 20, 211);
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin-top: 7px;
+}
+.float-left3 {
+  color: rgb(209, 154, 154);
+  border-radius: 50px;
+  background-color: rgb(222, 26, 91);
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin-top: 7px;
+}
+.float-left4 {
+  color: rgb(0, 255, 110);
+  border-radius: 50px;
+  background-color: aqua;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin-top: 7px;
+}
 
 .dash-widget {
   padding-left: 10px;
@@ -52,44 +88,8 @@
 .section {
   display: flex;
 }
-
-
-
-.float-left1 {
-  color: red;
-  border-radius: 50px;
-  background-color: aqua;
-  height: 80px;
-  width: 80px;
-  text-align: center;
-  margin-top: 7px;
-}
-.float-left2 {
-  color: rgb(13, 0, 255);
-  border-radius: 50px;
-  background-color: rgb(133, 147, 206);
-  height: 80px;
-  width: 80px;
-  text-align: center;
-  margin-top: 7px;
-}
-.float-left3 {
-  color: rgb(33, 215, 27);
-  border-radius: 50px;
-  background-color: rgb(171, 217, 156);
-  height: 80px;
-  width: 80px;
-  text-align: center;
-  margin-top: 7px;
-}
-.float-left4 {
-  color: rgb(221, 30, 91);
-  border-radius: 50px;
-  background-color: rgb(181, 110, 136);
-  height: 80px;
-  width: 80px;
-  text-align: center;
-  margin-top: 7px;
+.section1 {
+  margin: 1px;
 }
 
 .middel-section {
