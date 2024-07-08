@@ -53,6 +53,45 @@
   display: flex;
 }
 
+
+
+.float-left1 {
+  color: red;
+  border-radius: 50px;
+  background-color: aqua;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin-top: 7px;
+}
+.float-left2 {
+  color: rgb(13, 0, 255);
+  border-radius: 50px;
+  background-color: rgb(133, 147, 206);
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin-top: 7px;
+}
+.float-left3 {
+  color: rgb(33, 215, 27);
+  border-radius: 50px;
+  background-color: rgb(171, 217, 156);
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin-top: 7px;
+}
+.float-left4 {
+  color: rgb(221, 30, 91);
+  border-radius: 50px;
+  background-color: rgb(181, 110, 136);
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  margin-top: 7px;
+}
+
 .middel-section {
   display: flex;
 }
@@ -118,9 +157,7 @@ body {
   margin-left: auto;
 }
 
-.section {
-  margin: 10px 10px;
-}
+
 
 
 .section .widget {
@@ -176,14 +213,6 @@ body {
   margin: 10px;
 }
 
-canvas {
-  max-width: 100%;
-  height: auto;
-}
-
-
-
-
 
 /* calender start..................... */
 
@@ -216,7 +245,7 @@ canvas {
 }
 
 .fc-button {
-  padding: 6px 20px;
+  padding: 2px 20px;
   border: 1px solid #ccc;
   background-color: #f9f9f9;
   color: #333;
@@ -238,30 +267,7 @@ canvas {
   background-color: #007bff;
   color: #fff;
 }
-.fc-head {
-  display: flex;
-  text-align: center;
-  background-color: #777;
-  /* margin-left: 20px; */
-}
-.fc-day-header {
-  display: inline-flex;
-  margin-left: 10px;
-  align-items: center;
 
-  padding: 10px;
-}
-
-/* .fc-row.fc-rigid .fc-content-skeleton {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-} */
-
-* {
-  box-sizing: border-box;
-}
 ul {
   list-style-type: none;
 }
@@ -276,27 +282,6 @@ body {
   text-align: center;
 }
 
-.month ul {
-  margin: 0;
-  padding: 0;
-}
-
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.month .prev {
-  float: left;
-  padding-top: 10px;
-}
-
-.month .next {
-  float: right;
-  padding-top: 10px;
-}
 
 .weekdays {
   margin: 0;
@@ -328,7 +313,7 @@ body {
   color: #777;
 }
 
-/* Add media queries for smaller screens */
+
 @media screen and (max-width: 720px) {
   .weekdays li,
   .days li {
@@ -353,7 +338,7 @@ body {
   }
 }
 
-
+/* end calender */
 
 .traffic-bar{
   display: flex;

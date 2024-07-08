@@ -16,7 +16,7 @@
     <!-- <div class="row  g-2"> -->
     <div class="col-3">
       <div class="dash-widget dash-widget5 d-flex">
-        <p class="float-left" style="font-size: 50px">
+        <p class="float-left1" style="font-size: 50px">
           <i class="fa-solid fa-children"></i>
         </p>
         <div class="dash-widget-info text-right">
@@ -27,7 +27,7 @@
     </div>
     <div class="col-3">
       <div class="dash-widget dash-widget5 d-flex">
-        <p class="float-left" style="font-size: 50px">
+        <p class="float-left2" style="font-size: 50px">
           <i class="fa-solid fa-users"></i>
         </p>
         <div class="dash-widget-info text-right">
@@ -38,7 +38,7 @@
     </div>
     <div class="col-3">
       <div class="dash-widget dash-widget5 d-flex">
-        <p class="float-left" style="font-size: 50px">
+        <p class="float-left3" style="font-size: 50px">
           <i class="fa-solid fa-user-group"></i>
         </p>
         <div class="dash-widget-info text-right">
@@ -49,7 +49,7 @@
     </div>
     <div class="col-3">
       <div class="dash-widget dash-widget5 d-flex">
-        <p class="float-left" style="font-size: 50px">
+        <p class="float-left4" style="font-size: 50px">
           <i class="fa-solid fa-laptop-code"></i>
         </p>
         <div class="dash-widget-info text-right">
@@ -60,19 +60,113 @@
     </div>
   </div>
   <!-- chat 1 start -->
-  <div class="section">
-    <div class="widget dash-widget col-6">
-      <!-- <h3 style="color: red">hi</h3> -->
-      <div style="display: block">
+  <!-- <div class="section"> -->
+
+  <!-- <div style="display: block">
         <canvas baseChart width="400" height="400" [type]="'line'" [data]="lineChartData" [options]="lineChartOptions"
           [legend]="lineChartLegend">
         </canvas>
+      </div> -->
+
+  <!-- end chart  -->
+
+  <!-- barchart  -->
+
+  <!-- <div class="widget dash-widget col-3">
+
+      <div>
+        <canvas baseChart [data]="barChartData" [options]="barChartOptions" [plugins]="barChartPlugins"
+          [legend]="barChartLegend" [type]="'bar'" style="height: 350px; width:350px ;">
+        </canvas>
       </div>
+    </div> -->
+
+
+
+  <!-- <div class="widget dash-widget col-3"></div> -->
+  <!-- </div> -->
+
+
+  <!-- <section>
+    <div class="section">
+    <div class="col-12 ">
+    <div class=" widget row">
+      <div class="col-6 card chart-li">
+        <div class="row">
+          <div class="col">
+            <h3>haribabu</h3>
+          </div>
+          <div class="col">
+
+          </div>
+        </div>
+
+      </div>
+      <div class=" widget col-3 card chart-li ">
+        <div class="row">
+          <div class="col-12 text-center" >babu</div>
+          <div class="ro">
+            <div class="col-12">
+              <canvas baseChart [data]="barChartData" [options]="barChartOptions" [plugins]="barChartPlugins"
+                [legend]="barChartLegend" [type]="'bar'" style="height: 350px;width: 350px;"  >
+              </canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 card chart-li">bv xjb</div>
     </div>
-    <!-- end chart  -->
-    <div class="widget dash-widget col-3"></div>
-    <div class="widget dash-widget col-3"></div>
   </div>
+</div>
+  </section> -->
+
+  <div class="section">
+
+    <!-- col-2  start-->
+    <div class="widget col-6">
+      <div class="cal-body mb-3">
+        <h6>Earnings</h6>
+        <span><a href=""> <i class="bi bi-three-dots"></i></a>
+        </span>
+      </div>
+      <canvas baseChart  [type]="'line'" [data]="lineChartData" [options]="lineChartOptions"
+        [legend]="lineChartLegend" style="width: 700px; height: 300px;">
+      </canvas>
+    </div>
+    <!-- end -->
+    <!-- col-3 start -->
+    <div class="widget col-3">
+      <div class="cal-body mb-3">
+        <h6>Expenses</h6>
+        <span><a href=""> <i class="bi bi-three-dots"></i></a>
+        </span>
+      </div>
+      <canvas baseChart [data]="barChartData" [options]="barChartOptions" [plugins]="barChartPlugins"
+        [legend]="barChartLegend" [type]="'bar'" style="height: 300px;width: 350px;">
+      </canvas>
+    </div>
+
+    <!-- col-4 start -->
+
+    <div class="widget col-3">
+      <div class="cal-body mb-3">
+        <h6>Expenses</h6>
+        <span><a href=""> <i class="bi bi-three-dots"></i></a>
+        </span>
+      </div>
+      <canvas baseChart
+      [labels]="doughnutChartLabels"
+      [datasets]="doughnutChartDatasets"
+      [options]="doughnutChartOptions"
+      [legend]="true"
+      [type]="'doughnut'">
+</canvas>
+    </div>
+  </div>
+
+
+
+
 
   <div class="section">
 
@@ -106,17 +200,15 @@
         <div class="fc-month-view">
 
           <table class="fc-row">
-            <thead class="fc-head ">
-              <tr class="container">
-                <th class="fc-day-header "><span>sun</span></th>
-                <th class="fc-day-header"><span>mon</span></th>
-                <th class="fc-day-header"><span>tus</span></th>
-                <th class="fc-day-header"><span>wen</span></th>
-                <th class="fc-day-header"><span>thu</span></th>
-                <th class="fc-day-header"><span>fry</span></th>
-                <th class="fc-day-header"><span>sat</span></th>
-              </tr>
-            </thead>
+            <ul class="weekdays">
+              <li>Mo</li>
+              <li>Tu</li>
+              <li>We</li>
+              <li>Th</li>
+              <li>Fr</li>
+              <li>Sa</li>
+              <li>Su</li>
+            </ul>
 
             <ul class="days">
               <li>31</li>

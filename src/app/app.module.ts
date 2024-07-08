@@ -24,12 +24,13 @@ import { BaseChartDirective } from 'ng2-charts';
 
 import { ExamListComponent } from './exam-list/exam-list.component';
 import { ClassComponent } from './class/class.component';
-
+// import { NgChartsModule } from 'ng2-charts';
 import { AdminComponent } from './admin componeents/admin/admin.component';
 import { StudentsComponent } from './admin componeents/students/students.component';
 import { TeachersComponent } from './admin componeents/teachers/teachers.component';
 import { AllStudentsComponent } from './students-components/all-students/all-students.component';
 import { StudentDetailsComponent } from './students-components/student-details/student-details.component';
+import { provideCharts, withDefaultRegisterables } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -51,13 +52,12 @@ import { StudentDetailsComponent } from './students-components/student-details/s
     AppRoutingModule,
     FormsModule,
     FontAwesomeModule,
-
+    // NgChartsModule,
     CommonModule,
     BaseChartDirective,
-
-    // NgChartsModule
   ],
-  providers: [provideClientHydration()],
+  providers: [provideClientHydration(),
+     provideCharts(withDefaultRegisterables())],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
